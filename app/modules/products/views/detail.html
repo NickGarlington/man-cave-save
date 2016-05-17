@@ -1,0 +1,41 @@
+<body>
+
+<div class="detail-header">
+
+<img src="assets/images/mancavelogo.png">
+
+  <h1 class="details-title">
+    A Closer Look
+  </h1>
+
+  <div class="details-right">
+    <div class="your-name">
+      {{ viewCtrl.user.password.email }}
+    </div>
+    <button ng-click="viewCtrl.logout()">
+      Sign Out
+    </button>
+  </div>
+</div>
+
+
+<div class="deets">
+<div class="detail-name">
+{{ viewCtrl.product.title }}
+</div>
+<br>
+<br>
+<div class="detail-pic">
+<img src=" {{ viewCtrl.product.image }}">
+</div>
+</div>
+
+<div class="detail-description">
+{{ viewCtrl.product.description }}
+
+<p>
+<a href="mailto:{{ viewCtrl.product.contact_email }}?Subject=I'm interested in buying your {{ viewCtrl.product.title }}">Contact Vendor</a>
+</p>
+
+</div>
+</body>

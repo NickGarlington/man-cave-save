@@ -1,0 +1,80 @@
+<header>
+
+  <img src="assets/images/mancavelogo.png">
+
+  <div class="products-title">
+    MANCAVESAVE.
+  </div>
+
+  <div class="products-right">
+    <div class="your-name">
+      {{ productsCtrl.user.password.email }}
+    </div>
+    <button ng-click="productsCtrl.logout()">
+      Sign Out
+    </button>
+  </div>
+</header>
+
+<div class="main panel red">
+  <div class="inner clearfix">
+    <div class="left">
+      <h1 class="big">Wall Decorations!!</h1>
+      <h2 class="big">Furniture!!</h2>
+      <h3 class="big">Paintings!!</h3>
+      <h4 class="big">Electronics!!</h4>
+    </div>
+    <div class="right">
+      <a ui-sref="create">Create a Product</a>
+    </div>
+    <div class="cave-pic">
+
+        <img src="http://odditymall.com/includes/content/ceramic-caveman-mug-thumb.jpg">
+    </div>
+  <div class="letter">
+    <span>
+    Man Cave
+  </span>
+  <br>
+A room, space, corner or area of a dwelling that is specifically reserved for a male person to be in a solitary condition,
+away from the rest of the household in order to work, play, involve himself in certain hobbies, activities without interuption.
+ This area is usually decorated by the male that uses it without interferance from any female influence.
+  </div>
+  </div>
+
+  <div class="guts">
+      <div class="search">
+    Search: <input type="text" placeholder="Search Here" ng-model="productsCtrl.search">
+  </div>
+    <div class="products" ng-repeat="product in productsCtrl.products|filter:productsCtrl.search">
+      <div class="items clearfix">
+
+      <div class="small-name">
+            {{product.title}}
+      </div>
+
+        <div class="items-photos">
+
+          <a ui-sref="view({ id: product.$id })"><img ng-src="{{product.image}}" alt=""></a>
+
+        </div>
+        <div class="description">
+          <div class="name">
+            {{product.title}}
+            <br>
+            {{product.price}}
+          </div>
+
+          <div class="explanation">
+            {{product.description}}
+          </div>
+          <div class="remove">
+            <i class="fa fa-trash" ng-click="productsCtrl.deleteProducts(product)" ng-if="product.user_id === productsCtrl.user.uid"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

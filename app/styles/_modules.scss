@@ -1,0 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+$color: #e84b82;
+$transition-time: 0.5s;
+// COLOR PROFILES
+$pink: #f03485;
+$yellow: #ffce55;
+$blue: #51cbf1;
+$orange: #fa9939;
+$green: #9dc705;
+$dkblue: #038ecf;
+$grey: #484848;
+$ltgrey: #acacac;
+$dkgrey: #222;
+$red: #f3655d;
+// body {
+//   margin: 0;
+// }
+.email input {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.password input {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.snap input {
+  width: 150px;
+  height: 30px;
+  background-color: #fa9939;
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+// .new-email input {
+//   width: 250px;
+//   height: 30px;
+//   font-size: 20px;
+// }
+// .new-password input {
+//   width: 250px;
+//   height: 30px;
+//   font-size: 20px;
+// }
+// .new-login input {
+//   width: 150px;
+//   height: 30px;
+//   background-color: blue;
+//   color: gold;
+// }
+header img {
+  display: none;
+
+    display: block;
+    width: 60px;
+    height: 40px;
+    float: left;
+
+
+}
+// .main-panel {
+//   display: inline-block;
+//   width: 100%;
+//   height: auto;
+//   border-top: 1px solid $dkgrey;
+// }
+// .inner {
+//
+//   width: 100%;
+//   height: 500px;
+//   border-bottom: 2px solid black;
+//
+//
+// }
+// .left {
+//   float: left;
+// }
+// .right {
+//   margin: 30px -9rem;
+//   text-align: center;
+//   display: inline-block;
+// }
+// // .panel {
+// //   padding: 1em;
+// //   background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+// //   border-top: 3px solid #444;
+// //   margin-bottom: -4px;
+// //   &.red {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+// //   }
+// //   &.blue {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #038ecf 0, #51cbf1 30%, #7ff9ff 50%, #51cbf1 70%, #038ecf 100%);
+// //   }
+// //   &.grey {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #484848 0, #959595 30%, #acacac 50%, #959595 70%, #484848 100%);
+// //   }
+// //   &.ltgrey {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #acacac 0, #dadada 30%, #f2f2f2 50%, #dadada 70%, #acacac 100%);
+// //   }
+// //   &.yellow {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #ffce55 0, #fffc83 30%, #ffffb1 50%, #fffc83 70%, #ffce55 100%);
+// //   }
+// //   &.orange {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #fa9939 0, #ffc767 30%, #fff595 50%, #ffc767 70%, #fa9939 100%);
+// //   }
+// //   &.pink {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #f03485 0, #ff62b3 30%, #ff90e1 50%, #ff62b3 70%, #f03485 100%);
+// //   }
+// //   &.green {
+// //     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #9dc705 0, #cbf533 30%, #f9ff61 50%, #cbf533 70%, #9dc705 100%);
+// //   }
+// // }
+// /*===========================
+// END // Comic (Dot) Panels
+// ============================*/
+// /*===========================
+// START // Big & "Fancy" Headlines
+// Original by @sudocoda | Transparent Action Onomatopoeia | http://codepen.io/sudocoda/pen/xkLie
+// ============================*/
+.big {
+  font-family: "Bangers";
+  margin: 0 0 -1em;
+  text-shadow: -1px -1px orange, 1px 1px white, 2px 2px white;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  padding-bottom: 50px;
+  float: left;
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: $dkgrey;
+  margin-left: 15px;
+}
+.right a {
+
+  font-size: 50px;
+  font-family: "Bangers", sans-serif;
+  color: $dkgrey;
+  font-family: "Bangers";
+  margin: 0 0 -1em 0;
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  text-align: center;
+  margin-left: 27px;
+}
+.items {
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+//   margin-top: 10px;
+}
+//
+
+.items-photos img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px black;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+.items-photos {
+  width: 100%;
+}
+
+.small-name {
+  font-size: 20px;
+  text-align: center;
+
+  font-family: "Bangers", sans-serif;
+  color: $dkgrey;
+  font-family: "Bangers";
+  margin: 0 0 -1em 0;
+  text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+  margin-left: 30px;
+
+}
+
+.explanation {
+  margin-top: 20px;
+  font-size: 20px;
+}
+// .name {
+//   margin-top: 20px;
+// }
+.create-title {
+  text-align: center;
+  font-size: 50px;
+
+}
+.create-form {
+  margin-top: 100px;
+  float: left;
+  width: 400px;
+}
+.help-text {
+  float: left;
+  width: 48%;
+}
+.new-title {
+  margin-bottom: 20px;
+  margin-left: 62px;
+  // display: inline-block;
+}
+.new-pic {
+  margin-bottom: 20px;
+  margin-left: 70px;
+  // display: inline-block;
+}
+.new-description {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  // display: inline-block;
+}
+.price {
+  margin-bottom: 60px;
+  margin-left: 70px;
+  width: 400px;
+  // display: inline-block;
+}
+.help-text {
+  margin-bottom: 10px;
+
+}
+.help-holder {
+  margin-top: 10px;
+}
+.click input {
+  margin-left: 140px;
+  background-color: orange;
+  border-radius: 20%;
+}
+.help-holder img {
+  width: 50px;
+  height: 20px;
+
+}
+.detail-name {
+  font-size: 40px;
+  font-size: 30px;
+  font-family: "Bangers", sans-serif;
+  color: $dkgrey;
+  font-family: "Bangers";
+  margin: 0 0 -1em;
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+.detail-pic img {
+  width: 300px;
+  height: 300px;
+  margin-left: 40px;
+  border: 1px solid black;
+}
+.deets {
+  float: left;
+}
+.detail-description {
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  width: 400px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+}
+.detail-header img {
+  width: 60px;
+  height: 40px;
+  float: left;
+  }
+
+  .details-title {
+    font-size: 12px;
+
+
+  }
+// .cave-pic {
+//   width: 50%;
+//   position: absolute;
+// }
+.cave-pic img {
+  border-radius: 50%;
+  margin-right: 170px;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin-left: 125px;
+  margin-top: 20px;
+}
+// .bubble {
+//
+//   // margin: 40px 40px 80px;
+//   padding: 1px;
+//   border-radius: 10px;
+//   position: relative;
+//   background-color: #FFF;
+//   box-shadow: 0 0 20px 20px #FFF;
+//   text-align: center;
+//   // display: inline-block;
+//   font-family: "Comic sans ms", Helvetica, sans-serif;
+//   /* yes, I'm using comic sans, deal! */
+//   font-size: 14pt;
+//   // margin-top: -400px;
+//   margin-bottom: 40px;
+//   margin-left: 150px;
+//   margin-top: 50px;
+//   display: none;
+//
+//
+// }
+// .bubble.left:before {
+//   content: " ";
+//   position: absolute;
+//   top: 65px;
+//   left: 10px;
+//   border-radius: 50%;
+//   box-shadow: 0 0 20px 17px #FFF;
+// }
+// .bubble.left:after {
+//   content: " ";
+//   position: absolute;
+//   top: 100px;
+//   left: 20px;
+//   border-radius: 50%;
+//   box-shadow: 0 0 13px 10px #FFF;
+// }
+.letter {
+
+  border-bottom: 1px 1px 1px black;
+
+
+}
+span {
+  text-decoration: underline;
+  font-size: 50px;
+  font-size: 60px;
+  font-size: 50px;
+  font-family: "Bangers", sans-serif;
+  color: $dkgrey;
+  font-family: "Bangers";
+
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  margin-top: 40px;
+  margin-left: 90px;
+
+}
+i {
+  width: 20px;
+  height: 20px;
+  margin-left: 195px;
+  color: black;
+
+}
+i:hover {
+  color: red;
+}
+.search {
+font-size: 40px;
+margin-top: 30px;
+border-bottom: 1px solid black;
+margin-bottom: 10px;
+}
+.search input {
+padding: 2em;
+margin-bottom: 5px;
+  width: 200px;
+  font-size: 10px;
+}
+// .login-link {
+//   float: right;
+//   margin-right: 260px;
+//   margin-top: 60px;
+// }
+// .email {
+//   margin-left: 50px;
+//   width: 400px;
+//   width: 400px;
+// }
+// .password {
+//   margin-left: 28px;
+//   width: 400px;
+// }
+// .snap {
+//   margin-left: 100px;
+//   width: 400px;
+// }
+// .snap input:hover {
+//   background-color: red;
+// }
+// .register-right {
+//   float: right;
+//   width: 400px;
+// }
+// .right-letter {
+//   margin-left: -500px;
+//   width: 400px;
+//   margin-top: -200px;
+// }
+// .login-link a {
+//   font-size: 20px;
+//   color: blue;
+//   margin-right: -200px;
+// }
+// .login-link a:hover {
+//   color: red;
+// }
+//
+.your-name {
+  font-size: 12px;
+}
+//
+.login-letter {
+margin-left: 50px;
+}

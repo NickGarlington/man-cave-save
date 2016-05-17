@@ -3,7 +3,7 @@ class UserService {
     this._$q = $q;
 
     /* STEP 1 - ADD YOUR URL HERE */
-    this.ref = new Firebase("your firebase url");
+    this.ref = new Firebase("https://nag-mancave.firebaseio.com/");
     this.auth = $firebaseAuth(this.ref);
   }
 
@@ -20,18 +20,33 @@ class UserService {
   */
   login(user) {
     return new this._$q((resolve, reject) => {
+      this.auth.$authWithPassword(user)
+        .then((response) => {
+          this.user = response;
+          resolve(this.user);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+
     });
   }
 
+
   /* STEP 3 - Unauthorize the user. Firebase API docs! */
   logout() {
+    this.auth.$unauth();
   }
+
 
   /* STEP 4 - Return an object representing a "new" user with
     a blanK email and password */
-  new() {
-  }
-
+    new() {
+      return {
+        email: "",
+        password: ""
+      }
+    }
   /* STEP 5 - Below is a promise. Inside of it, use $createUser
     (FIREBASE DOCS!) to create the user with the information
     we've been provided. Respond to the promise, and call
@@ -44,9 +59,20 @@ class UserService {
   */
   create(user) {
     return new this._$q((resolve, reject) => {
+
+      this.auth.$createUser(user)
+        .then((response) => {
+          return this.auth.$authWithPassword(user);
+        })
+        .then((response) => {
+          this.user = response;
+          resolve(this.user);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+
     });
   }
-
 }
-
 export default UserService;

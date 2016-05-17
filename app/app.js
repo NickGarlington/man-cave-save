@@ -5,13 +5,17 @@ import firebase from 'firebase';
 import angularFire from 'angularfire';
 
 import user from './modules/user';
+import products from './modules/products';
 
 let App = angular.module('app', [
   'ui.router',
   'firebase',
 
-  'tiy.user'
+  'tiy.user',
+  'tiy.products'
 ]);
+
+
 
 function config($urlRouterProvider) {
   $urlRouterProvider.otherwise("/");

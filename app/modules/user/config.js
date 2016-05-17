@@ -5,6 +5,28 @@
     3. register which goes to /register
 */
 function config($stateProvider) {
+  $stateProvider
+.state("login", {
+  url: "/login",
+  controller: "LoginController as loginCtrl",
+  template: require("./views/login.html")
+})
+
+.state("register", {
+  url: "/register",
+  controller: "RegisterController as registerCtrl",
+  template: require("./views/register.html")
+})
+
+.state("profile", {
+  url: "/profile",
+  controller: "ProfileController as profileCtrl",
+  template: require("./views/profile.html")
+});
 }
+
+
+
+
 
 export default config;
