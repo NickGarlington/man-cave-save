@@ -4,7 +4,7 @@ header {
   width: 100%;
   height: 45px;
   position: relative;
-  background: linear-gradient(135deg, #fa9939, #fa9939 30%, #484848);
+  background: linear-gradient(135deg, #5353C1, #121268 30%, #C8C2FF);
   border: 2px solid black;
   box-shadow: 4px 4px 4px black; }
   @media screen and (min-width: 900px) {
@@ -38,7 +38,9 @@ header {
   float: left;
   margin-left: 30px;
   margin-top: 15px;
-  font-family: 'Nosifer', cursive; }
+  font-family: 'Nosifer', cursive;
+  color: #ffce55;
+  display: inline-block; }
   @media screen and (min-width: 900px) {
     .products-title {
       font-size: 50px;
@@ -46,9 +48,15 @@ header {
       padding-top: 10px; } }
   @media screen and (min-width: 1280px) {
     .products-title {
-      margin-left: 10px;
-      margin-top: 10px;
-      font-size: 80px; } }
+      font-size: 140px;
+      font-size: 140px;
+      font-family: "Bangers", sans-serif;
+      color: #222;
+      font-family: "Bangers";
+      margin: 0 0 -1em 0;
+      text-shadow: -1px -1px yellow, 4px 4px orange,  4px 4px orange;
+      margin-left: 30px;
+      margin-top: -25px; } }
 
 .name {
   display: none;
@@ -87,6 +95,9 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
   margin-left: 20px; }
+  @media screen and (min-width: 400px) {
+    .email input {
+      margin-left: 0; } }
 
 .password input {
   width: 250px;
@@ -128,7 +139,6 @@ header img {
 
 .small-name {
   font-size: 20px;
-  text-align: center;
   font-family: "Bangers", sans-serif;
   color: #222;
   font-family: "Bangers";
@@ -139,221 +149,288 @@ header img {
     .small-name {
       font-size: 40px;
       margin-right: 70px; } }
+  @media screen and (min-width: 1280px) {
+    .small-name {
+      margin-bottom: -100px;
+      margin-top: 30px;
+      margin-left: 350px; } }
 
 .inner {
   width: 100%;
-  height: 500px; }
-  .inner .big {
-    font-family: "Bangers";
-    margin: 0 0 -1em;
-    text-shadow: -1px -1px orange, 1px 1px white, 2px 2px white;
-    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-    -moz-transform: rotate(-10deg) skew(-10deg, 0);
-    -ms-transform: rotate(-10deg) skew(-10deg, 0);
-    -o-transform: rotate(-10deg) skew(-10deg, 0);
-    transform: rotate(-10deg) skew(-10deg, 0);
-    padding-bottom: 50px;
-    float: left;
-    width: 100%;
-    margin-left: 15px;
-    margin-top: 15px; }
-  @media screen and (min-width: 1280) {
-    .inner {
-      width: 400px;
-      padding: 0; } }
-  .inner h1,
-  .inner h2,
-  .inner h3,
-  .inner h4,
-  .inner h5 {
-    font-family: "Bangers", sans-serif;
-    color: #222;
-    margin-left: 15px; }
-  .inner .right a {
-    font-size: 50px;
-    font-family: "Bangers", sans-serif;
-    color: #222;
-    font-family: "Bangers";
-    margin: 0 0 -1em;
-    text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
-    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-    -moz-transform: rotate(-10deg) skew(-10deg, 0);
-    -ms-transform: rotate(-10deg) skew(-10deg, 0);
-    -o-transform: rotate(-10deg) skew(-10deg, 0);
-    transform: rotate(-10deg) skew(-10deg, 0);
-    text-align: center;
-    margin-left: 27px; }
-    @media screen and (min-width: 900px) {
-      .inner .right a {
-        margin-left: 280px; } }
-    @media screen and (min-width: 1280px) {
-      .inner .right a {
-        margin-left: 500px; } }
-  .inner .items {
-    border-bottom: 1px solid grey;
-    margin-bottom: 10px; }
-    @media screen and (min-width: 1280px) {
-      .inner .items {
-        border-bottom: 1px solid black; } }
-  .inner .items-photos img {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    box-shadow: 4px 4px 4px black;
-    margin-top: 30px;
-    margin-left: 150px; }
-    @media screen and (min-width: 900px) {
-      .inner .items-photos img {
-        margin-left: 400px;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto; } }
-  .inner .items-photos {
-    width: 100%; }
-  .inner .explanation {
-    margin-top: 20px;
-    font-size: 20px; }
-    @media screen and (min-width: 900px) {
-      .inner .explanation {
-        font-size: 40px; } }
-  .inner .name {
-    margin-top: 20px; }
-  .inner .create-title {
-    text-align: center;
-    font-size: 50px; }
-  .inner .create-form {
-    margin-top: 100px;
-    float: left;
-    width: 400px; }
-  .inner .help-text {
-    float: left;
-    width: 48%; }
-  .inner .new-title {
-    margin-bottom: 20px;
-    margin-left: 62px; }
-  .inner .new-pic {
-    margin-bottom: 20px;
-    margin-left: 70px; }
-  .inner .new-description {
-    margin-bottom: 20px;
-    margin-left: 30px; }
-  .inner .price {
-    margin-bottom: 60px;
-    margin-left: 70px;
-    width: 400px; }
-  .inner .help-text {
-    margin-bottom: 10px; }
-  .inner .help-holder {
-    margin-top: 10px; }
-  .inner .click input {
-    margin-left: 140px;
-    background-color: orange;
-    border-radius: 20%; }
-  .inner .help-holder img {
-    width: 50px;
-    height: 20px; }
-  .inner .detail-name {
-    font-size: 40px;
-    font-size: 30px;
-    font-family: "Bangers", sans-serif;
-    color: #222;
-    font-family: "Bangers";
-    margin: 0 0 -1em;
-    text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
-    margin-left: 30px;
-    margin-top: 30px;
-    text-align: center; }
-  .inner .detail-pic img {
-    width: 300px;
-    height: 300px;
-    margin-left: 40px;
-    border: 1px solid black; }
-  .inner .deets {
-    float: left; }
-  .inner .detail-description {
-    float: left;
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 30px;
-    width: 400px;
-    text-align: center; }
-  .inner p {
-    font-size: 20px; }
-  .inner .detail-header img {
-    width: 60px;
-    height: 40px;
-    float: left; }
-    @media screen and (min-width: 900px) {
-      .inner .detail-header img {
-        width: 160px;
-        height: 80px;
-        margin-top: 25px; } }
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNQ0bgTFTUESZZggUGgQaLIJ2YYjz0XSyBmPL6xH-wuM2dvdTK");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.big {
+  font-family: "Bangers";
+  margin: 0 0 -1em;
+  text-shadow: -1px -1px orange, 1px 1px white, 2px 2px white;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  padding-bottom: 50px;
+  float: left;
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 15px; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: #222;
+  margin-left: 15px; }
+
+.right a {
+  font-size: 50px;
+  font-family: "Bangers", sans-serif;
+  color: #222;
+  font-family: "Bangers";
+  margin: 0 0 -1em;
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  text-align: center;
+  margin-left: 27px; }
+  @media screen and (min-width: 900px) {
+    .right a {
+      margin-left: 280px; } }
   @media screen and (min-width: 1280px) {
-    .inner .cave-pic {
-      width: 50%;
-      position: absolute; } }
-  .inner .cave-pic img {
-    border-radius: 50%;
-    margin-right: 170px;
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    margin-left: 125px;
-    margin-top: 20px; }
-    @media screen and (min-width: 900px) {
-      .inner .cave-pic img {
-        width: 300px;
-        height: 300px;
-        margin-left: -1px; } }
-    @media screen and (min-width: 1280px) {
-      .inner .cave-pic img {
-        float: right;
-        margin-top: -200px; } }
-  .inner .letter {
-    border-bottom: 1px 1px 1px black; }
-    @media screen and (min-width: 900px) {
-      .inner .letter {
-        text-align: center;
-        margin-right: 70px;
-        margin-left: 30px; } }
-    @media screen and (min-width: 1280px) {
-      .inner .letter {
-        margin-top: 40px;
-        float: right;
-        margin-top: -200px;
-        padding-right: 60px; } }
-  .inner span {
-    text-decoration: underline;
-    font-size: 50px;
-    font-size: 60px;
-    font-size: 50px;
-    font-family: "Bangers", sans-serif;
-    color: #222;
-    font-family: "Bangers";
-    text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
-    margin-top: 40px; }
-    @media screen and (min-width: 900px) {
-      .inner span {
-        margin-right: 30px; } }
-    @media screen and (min-width: 1280) {
-      .inner span {
-        margin: 0 auto; } }
+    .right a {
+      margin-left: 630px; } }
+
+.items {
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 1280px) {
+    .items {
+      border-bottom: 1px solid black; } }
+
+.items-photos img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px black;
+  margin-top: 30px;
+  margin-left: 150px; }
+  @media screen and (min-width: 900px) {
+    .items-photos img {
+      margin-left: 400px;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1280px) {
+    .items-photos img {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+      margin-left: 30px; } }
+
+.items-photos {
+  width: 100%; }
+
+.explanation {
+  margin-top: 20px;
+  font-size: 20px; }
+  @media screen and (min-width: 900px) {
+    .explanation {
+      font-size: 40px; } }
+  @media screen and (min-width: 1280px) {
+    .explanation {
+      margin-left: 20px; } }
+
+.name {
+  margin-top: 20px; }
+  @media screen and (min-width: 1280px) {
+    .name {
+      font-size: 40px; } }
+
+.create-title {
+  text-align: center;
+  font-size: 50px; }
+  @media screen and (min-width: 1280px) {
+    .create-title {
+      margin-right: 200px; } }
+
+.create-form {
+  margin-top: 100px;
+  float: left;
+  width: 400px; }
+
+.help-text {
+  float: left;
+  width: 48%; }
+
+.new-title {
+  margin-bottom: 20px;
+  margin-left: 62px; }
+
+.new-pic {
+  margin-bottom: 20px;
+  margin-left: 70px; }
+
+.new-description {
+  margin-bottom: 20px;
+  margin-left: 30px; }
+
+.price {
+  margin-bottom: 60px;
+  margin-left: 70px;
+  width: 400px; }
+
+.help-text {
+  margin-bottom: 10px; }
+
+.help-holder {
+  margin-top: 10px; }
+
+.click input {
+  margin-left: 140px;
+  background-color: orange;
+  border-radius: 20%; }
+
+.help-holder img {
+  width: 50px;
+  height: 20px; }
+
+.detail-name {
+  font-size: 40px;
+  font-size: 30px;
+  font-family: "Bangers", sans-serif;
+  color: #222;
+  font-family: "Bangers";
+  margin: 0 0 -1em;
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: center; }
+
+.detail-pic img {
+  width: 300px;
+  height: 300px;
+  margin-left: 40px;
+  border: 1px solid black; }
+  @media screen and (min-width: 1280px) {
+    .detail-pic img {
+      width: 500px;
+      height: 500px; } }
+
+.deets {
+  float: left; }
+
+.detail-description {
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  width: 400px;
+  text-align: center; }
+
+p {
+  font-size: 20px; }
+
+.detail-header img {
+  width: 60px;
+  height: 40px;
+  float: left; }
+  @media screen and (min-width: 900px) {
+    .detail-header img {
+      width: 160px;
+      height: 80px;
+      margin-top: 25px; } }
+
+@media screen and (min-width: 1280px) {
+  .cave-pic {
+    width: 50%;
+    position: absolute; } }
+
+.cave-pic img {
+  border-radius: 50%;
+  margin-right: 170px;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin-left: 125px;
+  margin-top: 20px; }
+  @media screen and (min-width: 900px) {
+    .cave-pic img {
+      width: 300px;
+      height: 300px;
+      margin-left: -1px; } }
+  @media screen and (min-width: 1280px) {
+    .cave-pic img {
+      float: right;
+      margin-top: -200px; } }
+
+.letter {
+  border-bottom: 1px 1px 1px black; }
+  @media screen and (min-width: 900px) {
+    .letter {
+      text-align: center;
+      margin-right: 70px;
+      margin-left: 30px; } }
+  @media screen and (min-width: 1280px) {
+    .letter {
+      margin-top: 40px;
+      float: right;
+      margin-top: -350px;
+      padding-right: 60px; } }
+
+.word {
+  text-decoration: underline;
+  font-size: 50px;
+  font-size: 60px;
+  font-size: 50px;
+  font-family: "Bangers", sans-serif;
+  color: #222;
+  font-family: "Bangers";
+  text-shadow: -1px -1px yellow, 1px 1px orange, 2px 2px orange;
+  margin-top: 40px; }
+  @media screen and (min-width: 400px) {
+    .word {
+      padding-top: 30px; } }
+  @media screen and (min-width: 900px) {
+    .word {
+      margin-right: 30px; } }
+  @media screen and (min-width: 1280) {
+    .word {
+      margin: 0 auto; } }
+
+@media screen and (min-width: 400px) {
+  .man-def {
+    margin-top: 20px; } }
 
 @media screen and (min-width: 1280px) {
   .man-def {
     margin-top: 15px;
     text-align: justify;
     width: 200px;
-    font-size: 20px; } }
+    font-size: 20px;
+    color: white;
+    text-shadow: 4px 4px 4px black; } }
 
 i {
   width: 20px;
   height: 20px;
   margin-left: 195px;
   color: black; }
+  @media screen and (min-width: 400px) {
+    i {
+      margin-left: 50px; } }
   @media screen and (min-width: 900px) {
     i {
       margin-left: 450px; } }
+  @media screen and (min-width: 1280px) {
+    i {
+      margin-left: 50px; } }
 
 i:hover {
   color: red; }
@@ -363,13 +440,17 @@ i:hover {
   margin-top: 30px;
   margin-bottom: 10px;
   width: 100px; }
+  @media screen and (min-width: 400px) {
+    .search {
+      width: 200px;
+      margin-top: 200px; } }
   @media screen and (min-width: 900px) {
     .search {
       padding-left: 200px; } }
   @media screen and (min-width: 1280px) {
     .search {
       margin-left: -650px;
-      margin-top: -50px; } }
+      margin-top: -120px; } }
 
 .search input {
   padding: 20px;
@@ -377,35 +458,65 @@ i:hover {
   width: 400px;
   font-size: 10px;
   border: 1px solid orange; }
+  @media screen and (min-width: 400px) {
+    .search input {
+      width: 200px; } }
 
 .email {
   margin-left: 50px;
   width: 400px;
   width: 400px; }
+  @media screen and (min-width: 400px) {
+    .email {
+      width: 350px; } }
   @media screen and (min-width: 900px) {
     .email {
       margin-left: 250px; } }
+  @media screen and (min-width: 1280px) {
+    .email {
+      margin-left: 420px; } }
 
 .password {
   margin-left: 28px;
   width: 400px; }
   @media screen and (min-width: 900px) {
     .password {
+      margin-left: 25px; } }
+  @media screen and (min-width: 900px) {
+    .password {
       margin-left: 250px; } }
+  @media screen and (min-width: 1280px) {
+    .password {
+      margin-left: 400px; } }
 
 .snap {
   margin-left: 100px;
   width: 400px; }
+  @media screen and (min-width: 400px) {
+    .snap {
+      width: 300px;
+      margin-left: 40px; } }
   @media screen and (min-width: 900px) {
     .snap {
       margin-left: 265px; } }
+  @media screen and (min-width: 1280px) {
+    .snap {
+      margin-left: 420px; } }
 
 .snap input:hover {
   background-color: red; }
 
+@media screen and (min-width: 400px) {
+  .right-letter {
+    margin-left: 40px; } }
+
 @media screen and (min-width: 900px) {
   .right-letter {
     margin-left: 300px; } }
+
+@media screen and (min-width: 1280px) {
+  .right-letter {
+    margin-left: 440px; } }
 
 .your-name {
   font-size: 12px; }
@@ -419,7 +530,15 @@ i:hover {
   @media screen and (min-width: 900px) {
     .login-letter {
       margin-left: 300px; } }
+  @media screen and (min-width: 1280px) {
+    .login-letter {
+      margin-left: 450px;
+      margin-top: 30px; } }
 
 .line {
   width: 100%;
   border-bottom: 1px solid black; }
+
+@media screen and (min-width: 1280px) {
+  span {
+    font-size: 180px; } }
