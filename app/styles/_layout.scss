@@ -14,9 +14,15 @@ header {
   width: 100%;
   height: 45px;
   position: relative;
-  background: linear-gradient(135deg, #fa9939, #fa9939 30%, #484848);
+  background: linear-gradient(135deg, #5353C1, #121268 30%, #C8C2FF);
   border: 2px solid black;
   box-shadow: 4px 4px 4px black;
+  @media screen and ( min-width: 900px){
+    height: 120px;
+  }
+  @media screen and (min-width: 1280px){
+    height: 160px;
+  }
 }
 //
 .detail-header {
@@ -26,6 +32,9 @@ header {
   background: linear-gradient(135deg, #fa9939, #fa9939 30%, #484848);
   border: 2px solid black;
   box-shadow: 4px 4px 4px black;
+  @media screen and (min-width: 900px){
+    height: 120px;
+  }
 
 }
 //
@@ -55,7 +64,30 @@ header {
   margin-left: 30px;
   margin-top: 15px;
   font-family: 'Nosifer', cursive;
+  color: #ffce55;
+  display: inline-block;
 
+  @media screen and (min-width: 900px){
+    font-size: 50px;
+    padding-left: 65px;
+    padding-top: 10px;
+  }
+    @media screen and (min-width: 1280px){
+      // margin-left: 10px;
+      // margin-top: 10px;
+      // font-size: 80px;
+      // text-shadow: 4px 4px 4px black;
+      font-size: 140px;
+      font-size: 140px;
+      font-family: "Bangers", sans-serif;
+      color: $dkgrey;
+      font-family: "Bangers";
+      margin: 0 0 -1em 0;
+      text-shadow: -1px -1px yellow, 4px 4px orange,  4px 4px orange;
+      margin-left: 30px;
+      margin-top: -25px;
+
+    }
 }
 //
 // .guts {
@@ -107,4 +139,8 @@ header {
 
   font-family: 'Nosifer', cursive;
   margin-right: 160px;
+  @media screen and (min-width: 900px){
+    font-size: 40px;
+    padding-left: 180px;
+}
 }

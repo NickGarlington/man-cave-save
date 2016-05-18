@@ -1,22 +1,20 @@
-<body>
+<header>
 
-<div class="detail-header">
+  <img src="assets/images/mancavelogo.png">
 
-<img src="assets/images/mancavelogo.png">
+  <div class="products-title">
+    <span>M</span>AN<span>C</span>AVE<span>S</span>AVE
+  </div>
 
-  <h1 class="details-title">
-    A Closer Look
-  </h1>
-
-  <div class="details-right">
+  <div class="products-right">
     <div class="your-name">
-      {{ viewCtrl.user.password.email }}
+      {{ productsCtrl.user.password.email }}
     </div>
-    <button ng-click="viewCtrl.logout()">
+    <button ng-click="productsCtrl.logout()">
       Sign Out
     </button>
   </div>
-</div>
+</header>
 
 
 <div class="deets">
