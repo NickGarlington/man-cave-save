@@ -177,6 +177,9 @@ header img {
   width: 360px;
   margin-left: 15px;
   margin-top: 15px; }
+  @media screen and (min-width: 1280px) {
+    .big {
+      width: 1000px; } }
 
 h1,
 h2,
@@ -409,7 +412,8 @@ p {
       margin-right: 30px; } }
   @media screen and (min-width: 1280) {
     .word {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      margin-top: -30px; } }
 
 @media screen and (min-width: 400px) {
   .man-def {
@@ -445,7 +449,7 @@ i:hover {
 
 .search {
   font-size: 40px;
-  margin-top: 200px;
+  margin-top: 250px;
   margin-bottom: 10px;
   width: 100px; }
   @media screen and (min-width: 400px) {
